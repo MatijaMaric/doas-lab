@@ -12,8 +12,8 @@ mask2 = [1 1 1; 0 0 0; -1 -1 -1] / 3;
 mask3 = [-1 -1 -1; -1 8 -1; -1 -1 -1];
 mask4 = [0 -1 0; -1 4 -1; 0 -1 0];
 
-imgC1 = conv2(img, mask1);
-imgC2 = conv2(img, mask2);
+imgC1 = conv2(img, mask1, 'valid');
+imgC2 = conv2(img, mask2, 'same');
 imgC3 = conv2(img, mask3);
 imgC4 = conv2(img, mask4);
 

@@ -6,7 +6,7 @@ pkg load image
 [img, cmap] = imread('slike/psgamma.tif');
 img = ind2rgb(img, cmap);
 
-gammas = [4 4 4];
+gammas = [0.4 0.4 0.4];
 img = imadjust(img, [], [], gammas);
 
 imshow(img)
