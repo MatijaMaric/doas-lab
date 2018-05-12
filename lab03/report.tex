@@ -6,6 +6,7 @@
     \usepackage{caption}
     \usepackage{amsmath}
     \usepackage{subfig}
+    \usepackage{siunitx}
 
     \graphicspath{ {res/} }
 
@@ -190,6 +191,7 @@
             \includegraphics[width=0.75\textwidth]{saturnhist}
             \captionof{figure}{Histogrami drugog reda za pomake (1, 1), (3, 3), (5, 5), (10, 10) slike {\it saturn.tif}}
         \end{minipage}
+\end{enumerate}
 
 \section{Sobelov i Prewittov operator}
 \begin{enumerate}
@@ -200,10 +202,72 @@
             \captionof{figure}{Procjene gradijenta Sobelovim i Prewittovim operatorom na slici {\it 4.2.07.tiff}}
         \end{minipage}
     
-
-    
-\end{enumerate}
 \end{enumerate}
 
+\section{Kompas operatori za detekciju ruba}
+\begin{enumerate}
+    \item 
+        \begin{minipage}{\linewidth}
+            \centering
+            \includegraphics[width=0.75\textwidth]{kompas}
+            \captionof{figure}{Procjene gradijenta kompas operatorima za kuteve \ang{0}, \ang{45} i \ang{90}}
+        \end{minipage}
+    \item
+        Kutevi koji nisu pod kutem pojedinog operatora su manje istaknuti ili se ne vide uopće.
+    \item
+        \begin{minipage}{\linewidth}
+            \centering
+            \includegraphics[width=0.75\textwidth]{kompasfft}
+            \captionof{figure}{Amplitudni i fazni spektri kompas operatora za kuteve \ang{0}, \ang{45} i \ang{90}}
+        \end{minipage}
+    \item
+        Kad povećamo razlučivost rubova u prostornoj domeni, gubimo razlučivost u frekvencijskoj domeni.
+\end{enumerate}
+
+\section{Laplaceov operator}
+\begin{enumerate}
+    \item
+        \begin{minipage}{\linewidth}
+            \centering
+            \includegraphics[width=0.75\textwidth]{laplacian}
+            \captionof{figure}{Procjene gradijenta Laplacevim operatorima za parametar $\alpha \in [0, 0.2, 0.5, 1]$}
+        \end{minipage}
+    \item
+        Što je veći parametar Laplaceovog operatora to je manji odziv na šum i jači odziv na istaknutije rubove.
+
+\end{enumerate}
+
+\section{Značajke teksture}
+\begin{enumerate}
+	\item
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.75\textwidth]{texture22}
+			\captionof{figure}{Značajke teksture za pomak [2, 2]}
+		\end{minipage}
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.75\textwidth]{texture44}
+			\captionof{figure}{Značajke teksture za pomak [4, 4]}
+		\end{minipage}
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.75\textwidth]{texture35}
+			\captionof{figure}{Značajke teksture za pomak [3, 5]}
+		\end{minipage}
+	\item
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.75\textwidth]{textureorig}
+			\captionof{figure}{Originalne slike tekstura {\it tekstura\_nebo.png} i {\it tekstura\_plast1.png}}
+		\end{minipage}
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.75\textwidth]{texturecovar}
+			\captionof{figure}{Kovarijanca za slike tekstura {\it tekstura\_nebo.png} i {\it tekstura\_plast1.png}}
+		\end{minipage}
+	
+	
+\end{enumerate}
 
 \end{document}
